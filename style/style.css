@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
+
+.container {
+    padding:0px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+.pb-30 {
+    padding-bottom:1rem;
+}
+
+/* /COMMON */
+
+
+
 #logo {
     font-family: 'Nerko One', cursive;
     text-align: center;
@@ -12,6 +34,51 @@
     color: #ff9614;
     text-transform: uppercase;
     text-shadow: 2px 3px 4px grey;
+}
+
+
+main {
+    background-color:#f6f5f3;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+section.summary {
+    padding-top:30px;
+}
+
+.summary div.info span {
+    display: none;
+}
+
+div.info h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(53, 53, 53, 0.438);
+}
+
+div.info h2 {
+    color: #4e3969;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+.recipe-summary {
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.recipe-summary h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.recipe-summary ul li {
+    padding-bottom: 10px;
+}
+
+.recipe-summary ul li:last-child  {
+    font-weight: bold;
 }
 
 
