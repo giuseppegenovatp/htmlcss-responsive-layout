@@ -21,7 +21,6 @@ ul {
 img {
     width: 100%;
     display: block;
-    min-height: 100%;
 }
 
 .pb-30 {
@@ -149,10 +148,14 @@ section.social {
 }
 
 .hr-under {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     width: 100px;
     border: 1px solid #f7972e;
+}
+
+.presentation {
+    margin-bottom: 130px;
 }
 
 .presentation h2 {
@@ -162,7 +165,6 @@ section.social {
 
 .presentation-image img {
     max-width: 375px;
-    height: 250px;
     margin: 10px auto;
 }
 
@@ -180,11 +182,14 @@ footer {
 }
 
 .footer-text {
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
+
+
 .footer-text p {
-    padding: 20px 0;
+    padding: 5px 0;
+    font-size: 0.8rem;
 }
 
 .footer-menu {
@@ -200,108 +205,5 @@ footer {
 
 .footer-menu ul li a {
     color: #ffffff;
+    font-size: 0.8rem;
 }
-
-
-/***************** RESPONSIVE ********************/
-@media screen and (min-width: 768px) {
-    #logo {
-        text-align: start;
-        padding-left:15px;
-    }
-
-    .container {
-        max-width: 895px;
-        margin: 0 auto;
-    }
-
-    .summary h2 {
-        font-size: 2.5rem;
-    }
-
-     .summary h2 span  {
-        display: inline;
-    }
-
-    .recipe-summary-container ul {
-        flex-direction: row;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .recipe-summary-container ul li {
-        width: calc((100% / 3) - 60px);
-    }
-    
-    .nav-social-container ul {
-        border-radius: 50px;
-    }
-    
-    
-    .nav-social-container ul li {
-        background-color: white;
-        border-radius: 50px;
-        padding: 10px 45px;
-    }
-
-    .advertising-content {
-        display: block;
-    }
-
-    .presentation-image img {
-        float:left;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .container {
-        max-width: 1350px;
-        margin: 0 auto;
-    }
-
-    .summary h2 {
-        font-size: 3rem;
-    }
-
-    .recipe-summary-container {
-        display: flex;
-    }
-
-    .info {
-        flex: 4;
-    }
-
-    .info-text {
-        flex: 2;
-    }
-
-    .info-text ul {
-        display: column;
-        flex-direction: column;
-    }
-
-    .info-text ul li {
-        width: 100%;
-    }
-
-    .nav-social-container ul li strong {
-        display: inline;
-        padding-left: 5px;
-    }
-    
-    .footer-menu {
-        margin-top: 20px;
-    }
-
-    .footer-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        justify-content: space-between;
-        padding:0px 15px;
-    }
-
-}
-/***************** /RESPONSIVE ********************/
