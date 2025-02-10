@@ -21,10 +21,28 @@ ul {
 img {
     width: 100%;
     display: block;
+    min-height: 100%;
 }
 
 .pb-30 {
     padding-bottom:1rem;
+}
+
+
+i.fa-facebook {
+    color: #1a77f3;
+}
+i.fa-twitter {
+    color: #009eff;
+}
+i.fa-instagram {
+    color: #dc429a;
+}
+i.fa-pinterest {
+    color: #e62222;
+}
+i.fa-youtube {
+    color: #e62222;
 }
 
 /* /COMMON */
@@ -68,9 +86,7 @@ section.summary {
     color: #4e3969;
     font-weight: 800;
     font-size: 2rem;
-
 }
-
 
 .recipe-summary-container {
     background-color: #ffffff;
@@ -100,7 +116,30 @@ section.summary {
     font-weight: bold;
 }
 
+section.social {
+    margin-top: 50px;
+}
 
+.nav-social-container ul {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+
+.nav-social-container ul li {
+    background-color: white;
+    box-shadow: 1px 5px 15px rgb(205 205 205 / 80%);
+    border-radius: 50px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-social-container ul li strong {
+    display: none;
+}
 
 
 
@@ -112,8 +151,12 @@ section.summary {
     }
 
     .container {
-        width: 90%;
+        max-width: 895px;
         margin: 0 auto;
+    }
+
+    .summary h2 {
+        font-size: 2.5rem;
     }
 
      .summary h2 span  {
@@ -130,13 +173,22 @@ section.summary {
         width: calc((100% / 3) - 60px);
     }
     
-
+    .nav-social-container ul {
+        border-radius: 50px;
+    }
+    
+    
+    .nav-social-container ul li {
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px 50px;
+    }
 }
 
 @media screen and (min-width: 992px) {
 
     .container {
-        width: 70%;
+        max-width: 1350px;
         margin: 0 auto;
     }
 
@@ -164,5 +216,12 @@ section.summary {
     .info-text ul li {
         width: 100%;
     }
+
+    .nav-social-container ul li strong {
+        display: inline;
+        padding-left: 20px;
+    }
+
+    
 }
 /***************** /RESPONSIVE ********************/
