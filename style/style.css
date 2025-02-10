@@ -28,6 +28,9 @@ img {
     padding-bottom:1rem;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
 
 i.fa-facebook {
     color: #1a77f3;
@@ -63,7 +66,7 @@ header {
 }
 
 
-main {
+main, footer {
     background-color:#f6f5f3;
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
@@ -141,6 +144,63 @@ section.social {
     display: none;
 }
 
+.advertising-content {
+    display: none;
+}
+
+.hr-under {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    border: 1px solid #f7972e;
+}
+
+.presentation h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.presentation-image img {
+    max-width: 375px;
+    height: 250px;
+    margin: 10px auto;
+}
+
+.presentation-image p {
+    line-height: 1.5;
+}
+
+
+footer {
+    background-color:#7c69a4;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-text {
+    margin-top: 20px;
+}
+
+.footer-text p {
+    padding: 20px 0;
+}
+
+.footer-menu {
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-menu ul li a {
+    color: #ffffff;
+}
 
 
 /***************** RESPONSIVE ********************/
@@ -181,7 +241,15 @@ section.social {
     .nav-social-container ul li {
         background-color: white;
         border-radius: 50px;
-        padding: 10px 50px;
+        padding: 10px 45px;
+    }
+
+    .advertising-content {
+        display: block;
+    }
+
+    .presentation-image img {
+        float:left;
     }
 }
 
@@ -219,9 +287,21 @@ section.social {
 
     .nav-social-container ul li strong {
         display: inline;
-        padding-left: 20px;
+        padding-left: 5px;
+    }
+    
+    .footer-menu {
+        margin-top: 20px;
     }
 
-    
+    .footer-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        justify-content: space-between;
+        padding:0px 15px;
+    }
+
 }
 /***************** /RESPONSIVE ********************/
