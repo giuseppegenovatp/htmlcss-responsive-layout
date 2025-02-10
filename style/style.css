@@ -136,7 +136,7 @@ section.summary {
 @media screen and (min-width: 992px) {
 
     .container {
-        min-width: 70%;
+        width: 70%;
         margin: 0 auto;
     }
 
