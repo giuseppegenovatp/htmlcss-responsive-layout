@@ -54,7 +54,7 @@ section.summary {
     padding-top:30px;
 }
 
-.summary div h2 span {
+.summary h2 span {
     display: none;
 }
 
@@ -68,6 +68,7 @@ section.summary {
     color: #4e3969;
     font-weight: 800;
     font-size: 2rem;
+
 }
 
 
@@ -77,11 +78,12 @@ section.summary {
 
 .info-text {
     box-shadow:  -1px -3px 13px #888888;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .info-text h3 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .info-text ul {
@@ -114,13 +116,13 @@ section.summary {
         margin: 0 auto;
     }
 
-    .summary div h2 span  {
+     .summary h2 span  {
         display: inline;
     }
 
     .recipe-summary-container ul {
         flex-direction: row;
-        gap: 30px;
+        gap: 10px;
         flex-wrap: wrap;
     }
 
@@ -134,8 +136,33 @@ section.summary {
 @media screen and (min-width: 992px) {
 
     .container {
-        width: 70%;
+        min-width: 70%;
         margin: 0 auto;
+    }
+
+    .summary h2 {
+        font-size: 3rem;
+    }
+
+    .recipe-summary-container {
+        display: flex;
+    }
+
+    .info {
+        flex: 4;
+    }
+
+    .info-text {
+        flex: 2;
+    }
+
+    .info-text ul {
+        display: column;
+        flex-direction: column;
+    }
+
+    .info-text ul li {
+        width: 100%;
     }
 }
 /***************** /RESPONSIVE ********************/
