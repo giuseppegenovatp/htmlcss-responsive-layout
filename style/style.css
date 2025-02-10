@@ -6,6 +6,10 @@
 
 /* COMMON */
 
+body {
+    background-color:#f6f5f3 ;
+}
+
 .container {
     padding:0px 20px;
 }
@@ -16,6 +20,7 @@ ul {
 
 img {
     width: 100%;
+    display: block;
 }
 
 .pb-30 {
@@ -25,6 +30,9 @@ img {
 /* /COMMON */
 
 
+header {
+    background-color: #ffffff;
+}
 
 #logo {
     font-family: 'Nerko One', cursive;
@@ -46,38 +54,47 @@ section.summary {
     padding-top:30px;
 }
 
-.summary div.info span {
+.summary div h2 span {
     display: none;
 }
 
-div.info h4 {
+.summary h4 {
     text-transform: uppercase;
     font-weight: 500;
     color: rgba(53, 53, 53, 0.438);
 }
 
-div.info h2 {
+.summary h2 {
     color: #4e3969;
     font-weight: 800;
     font-size: 2rem;
 }
 
 
-.recipe-summary {
-    padding-left: 30px;
+.recipe-summary-container {
     background-color: #ffffff;
 }
 
-.recipe-summary h3 {
+.info-text {
+    box-shadow:  -1px -3px 13px #888888;
+}
+
+.info-text h3 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.recipe-summary ul li {
-    padding-bottom: 10px;
+.info-text ul {
+    display: flex;
+    flex-direction: column;
+    gap:10px
 }
 
-.recipe-summary ul li:last-child  {
+.info-text ul li {
+    margin-bottom: 10px;
+}
+
+.info-text ul li:last-child  {
     font-weight: bold;
 }
 
@@ -91,9 +108,34 @@ div.info h2 {
         text-align: start;
         padding-left:15px;
     }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .summary div h2 span  {
+        display: inline;
+    }
+
+    .recipe-summary-container ul {
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .recipe-summary-container ul li {
+        width: calc((100% / 3) - 60px);
+    }
+    
+
 }
 
 @media screen and (min-width: 992px) {
 
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 /***************** /RESPONSIVE ********************/
