@@ -175,7 +175,7 @@ section.social {
 
 .presentation-image img {
     max-width: 375px;
-    margin: 10px auto;
+    margin:0 auto;
 }
 
 .presentation-image p {
