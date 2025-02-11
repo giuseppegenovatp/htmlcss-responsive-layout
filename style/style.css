@@ -139,6 +139,16 @@ section.social {
     align-items: center;
 }
 
+.nav-social-container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-social-container ul li a:hover {
+    text-decoration: underline;
+    color: #ff9614;
+}
+
 .nav-social-container ul li strong {
     display: none;
 }
